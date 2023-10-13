@@ -1,38 +1,122 @@
-.App {
+.nav-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.nav-content a:hover {
+  color: darkgrey;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.nav-content a:active {
+  border-bottom: 2px solid red;
+}
+
+.list-category-container {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 10px 20px;
+  margin: 10px 0px;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+  font-weight: 600;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.category-item img {
+  width: 100px;
+  object-fit: contain;
+  border-radius: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.product-container {
+  display: flex;
+  justify-content: center; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.product-item {
+  margin: 10px 0px;
+}
+
+.product-item-body {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-content: center;
+  align-items: center;
+}
+
+.product-item-body p {
+  text-align: center;
+}
+
+.product-name {
+  font-weight: bolder;
+  margin: 10px;
+}
+
+.product-price {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: red;
+  border-radius: 20px;
+}
+
+.btn-card-container {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-card-container button {
+  border: 0px;
+}
+
+.btn-product-detail {
+  background-color: black;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+.product-title {
+  padding: 5px;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.product-content-price {
+  font-size: 20px;
+  color: red;
+  font-weight: bolder;
+}
+
+.btn-buy-now {
+  
+}
+
+.btn-buy-now button {
   color: white;
+  background-color: red;
+  text-align: center;
+  border-radius: 5px;
+  border: 0px;
+  padding: 5px 0px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-buy-now button p {
+  margin: 2px;
 }
